@@ -6,7 +6,7 @@ window.onload = function() {
 	request.open("GET",url);
 	request.onload = function(){
 	if (request.status == 200) {
-		saySomething(request.responseText);
+		fetchSomething(request.responseText);
 		// alert(request.responseText);
 	} else {
 		alert("no data...");
@@ -16,11 +16,12 @@ request.send(null);
 
 }
 
-
-
-
-function saySomething(response){
+function fetchSomething(response){
 	var dataDiv = document.getElementById('dataDisplay');
-	dataDiv.innerHTML = response;
+	var dataSet = JSON.parse(response);
+	for(i = 0; i<dataSet.length;i++){
+		console.log(dataSet.name);
+	}
+	// dataDiv.innerHTML = response;
 	// console.log(response);
 }
