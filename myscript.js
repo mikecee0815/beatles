@@ -7,7 +7,6 @@ window.onload = function() {
 	request.onload = function(){
 	if (request.status == 200) {
 		saySomething(request.responseText);
-		// alert(request.responseText);
 	} else {
 		alert("no data...");
 	}
@@ -16,5 +15,5 @@ request.send(null);
 
 }
 function saySomething(response){
-	console.table(response);
+	console.log(response);
 }
