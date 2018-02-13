@@ -6,7 +6,7 @@ window.onload = function() {
 	request.open("GET",url);
 	request.onload = function(){
 	if (request.status == 200) {
-		alert("Data succesfully recieved!!!");
+		alert(request.responseText);
 	} else {
 		alert("no data...");
 	}
