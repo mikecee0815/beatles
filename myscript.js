@@ -21,7 +21,7 @@ function fetchSomething(response){
 	var dataSet = JSON.parse(response);
 	for(i = 0; i<dataSet.length;i++){
 		var dataItem = dataSet[i];
-		consolelog(dataItem.name);
+		console.log(dataItem.name);
 	}
 	// dataDiv.innerHTML = response;
 	// console.log(response);
