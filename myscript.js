@@ -21,8 +21,9 @@ function fetchSomething(response){
 	var dataSet = JSON.parse(response);
 	for(i = 0; i <= dataSet.length; i++){
 		var dataItem = dataSet[i];
-		dataDiv.innerHTML = dataItem.name; 
-		// console.log(dataItem.name);
+		var li = document.createElement('li');
+		li.innerHTML = dataItem.name;
+		dataDiv.appendChild(li);
 	}
 	
 }
