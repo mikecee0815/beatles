@@ -15,6 +15,12 @@ window.onload = function() {
 request.send(null);
 
 }
+
+
+
+
 function saySomething(response){
-	console.log(response);
+	var dataDiv = window.getElementById('dataDisplay');
+	dataDiv.innerHTML = response;
+	// console.log(response);
 }
