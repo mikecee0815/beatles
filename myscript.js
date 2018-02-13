@@ -20,7 +20,7 @@ request.send(null);
 
 
 function saySomething(response){
-	var dataDiv = window.getElementById('dataDisplay');
+	var dataDiv = document.getElementById('dataDisplay');
 	dataDiv.innerHTML = response;
 	// console.log(response);
 }
