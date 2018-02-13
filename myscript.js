@@ -19,7 +19,7 @@ request.send(null);
 function fetchSomething(response){
 	var dataDiv = document.getElementById('dataDisplay');
 	var dataSet = JSON.parse(response);
-	for(i = 0; i<dataSet.length;i++){
+	for(i = 0; i <= dataSet.length; i++){
 		var dataItem = dataSet[i];
 		dataDiv.innerHTML = dataItem.name; 
 		// console.log(dataItem.name);
