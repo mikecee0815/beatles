@@ -22,8 +22,9 @@ function fetchSomething(response){
 	for(i = 0; i <= dataSet.length; i++){
 		var dataItem = dataSet[i];
 		var li = document.createElement('li');
-		li.innerHTML = dataItem.name;
+		li.innerHTML = dataItem.year;
 		dataDiv.appendChild(li);
+		console.log(dataSet);
 	}
 	
 }
