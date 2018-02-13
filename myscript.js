@@ -12,5 +12,6 @@ window.onload = function() {
 		alert("no data...");
 	}
 };
+request.send(null);
 
 }
