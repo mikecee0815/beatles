@@ -1,5 +1,5 @@
 
-window.onload() {
+window.onload = function() {
 
 	var url = "https://mikecee0815.github.io/beatles/beatles.json";
 	var request = new XMLHttpRequest();
