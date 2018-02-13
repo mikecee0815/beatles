@@ -20,7 +20,8 @@ function fetchSomething(response){
 	var dataDiv = document.getElementById('dataDisplay');
 	var dataSet = JSON.parse(response);
 	for(i = 0; i<dataSet.length;i++){
-		console.log(dataSet.name);
+		var dataItem = dataSet[i];
+		consolelog(dataItem.name);
 	}
 	// dataDiv.innerHTML = response;
 	// console.log(response);
