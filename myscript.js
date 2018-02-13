@@ -15,6 +15,6 @@ window.onload = function() {
 request.send(null);
 
 }
-function saySomething(data){
-	console.log(data);
+function saySomething(response){
+	console.log(response);
 }
