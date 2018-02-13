@@ -16,5 +16,5 @@ request.send(null);
 
 }
 function saySomething(response){
-	console.log(response);
+	console.table(response);
 }
