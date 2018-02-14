@@ -12,7 +12,7 @@ function beatles(beatleCars){
 		var li = document.createElement('li');
 		li.innerHTML = car.name;
 		dataDiv.appendChild(li);
-		// console.log(dataSet);
+		console.log(beatleCars);
 	}
 	
 }
